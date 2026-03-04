@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBloods HQ - Year-Round Design Services | Social Media Made Simple</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Stop burning out on social media. Get 96-720 professional designs delivered yearly. All public/bank holidays included. From $299/project.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <span id="loader-percent">0%</span>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="logo">Bluebloods HQ</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#plans">Year Round Designs</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <p class="hero-label">Bluebloods HQ</p>
+      <h1>COMMUNICATIONS, CREATIVE AND DEVELOPMENT AGENCY</h1>
+      <p class="hero-sub">Marketing · Branding · Web Development</p>
+      <a href="#expertise" class="btn">Discover our services</a>
+    </div>
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline>
+        <source src="your-showreel.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+    <blockquote class="hero-quote">"Elegance transcends time." — Armani</blockquote>
+  </section>
+
+  <!-- ====================================================
+     YEAR ROUND DESIGNS — PRICING SECTION
+===================================================== -->
+<section id="plans">
+    <p class="section-label">BLUEBLOODS HQ</p>
+    <h2>YEAR ROUND <strong>DESIGNS</strong></h2>
+    <p class="section-intro">
+      Do not let social media burn you out. Let us do the heavy lifting.<br />
+      <em>All designs will be delivered at once.</em>
+    </p>
+  
+    <div class="plans-grid">
+        <!-- ENTERPRISE PRO PLAN -->
+      <div class="plan-card featured" style="--plan-color: #dc2626;" data-plan="Enterprise Pro Plan" data-price="$5,599">
+        <div class="plan-badge">BEST VALUE</div>
+        <div class="plan-left">
+          <h3>ENTERPRISE<br/>PRO PLAN</h3>
+        </div>
+        <div class="plan-right">
+          <ul>
+            <li>730 designs (2 per day)</li>
+            <li>All public/bank holidays incl.</li>
+            <li>Delivery in 17 Days</li>
+          </ul>
+          <p class="plan-price">$5,599<span>/project</span></p>
+          <button class="plan-btn" onclick="openModal(this)">Get Started</button>
+        </div>
+        <div class="plan-fold"></div>
+      </div>
+
+      <!-- ENTERPRISE PLAN -->
+      <div class="plan-card" style="--plan-color: #dc2626;" data-plan="Enterprise Plan" data-price="$3,999">
+        <div class="plan-left">
+          <h3>ENTERPRISE<br/>PLAN</h3>
+        </div>
+        <div class="plan-right">
+          <ul>
+            <li>365 designs (1 per day)</li>
+            <li>All public/bank holidays incl.</li>
+            <li>Delivery in 17 Days</li>
+          </ul>
+          <p class="plan-price">$3,999<span>/project</span></p>
+          <button class="plan-btn" onclick="openModal(this)">Get Started</button>
+        </div>
+        <div class="plan-fold"></div>
+      </div>
+
+      <!-- STARTER PLAN -->
+      <div class="plan-card" style="--plan-color: #5b6ef5;" data-plan="Starter Plan" data-price="$959">
+        <div class="plan-left">
+          <h3>STARTER<br/>PLAN</h3>
+        </div>
+        <div class="plan-right">
+          <ul>
+            <li>96 designs (8 per mo. OR 2 per Wk.)</li>
+            <li>All public/bank holidays incl.</li>
+            <li>Delivery in 10 Days</li>
+          </ul>
+          <p class="plan-price">$959<span>/project</span></p>
+          <button class="plan-btn" onclick="openModal(this)">Get Started</button>
+        </div>
+        <div class="plan-fold"></div>
+      </div>
+  
+      <!-- STARTER 2 PLAN -->
+      <div class="plan-card" style="--plan-color: #38bdf8;" data-plan="Starter 2 Plan" data-price="$1,699">
+        <div class="plan-left">
+          <h3>STARTER 2<br/>PLAN</h3>
+        </div>
+        <div class="plan-right">
+          <ul>
+            <li>120 designs (10 per month)</li>
+            <li>All public/bank holidays incl.</li>
+            <li>Delivery in 10 Days</li>
+          </ul>
+          <p class="plan-price">$1,699<span>/project</span></p>
+          <button class="plan-btn" onclick="openModal(this)">Get Started</button>
+        </div>
+        <div class="plan-fold"></div>
+      </div>
+  
+      <!-- PRO PLAN -->
+      <div class="plan-card" style="--plan-color: #7c3aed;" data-plan="Pro Plan" data-price="$2,999">
+        <div class="plan-left">
+          <h3>PRO<br/>PLAN</h3>
+        </div>
+        <div class="plan-right">
+          <ul>
+            <li>180 designs (15 per month)</li>
+            <li>All public/bank holidays incl.</li>
+            <li>Delivery in 12 Days</li>
+          </ul>
+          <p class="plan-price">$2,999<span>/project</span></p>
+          <button class="plan-btn" onclick="openModal(this)">Get Started</button>
+        </div>
+        <div class="plan-fold"></div>
+      </div>
+  
+      <!-- PRO 2 PLAN -->
+      <div class="plan-card" style="--plan-color: #f97316;" data-plan="Pro 2 Plan" data-price="$2,299">
+        <div class="plan-left">
+          <h3>PRO 2<br/>PLAN</h3>
+        </div>
+        <div class="plan-right">
+          <ul>
+            <li>144 designs (12 per month)</li>
+            <li>All public/bank holidays incl.</li>
+            <li>Delivery in 12 Days</li>
+          </ul>
+          <p class="plan-price">$2,299<span>/project</span></p>
+          <button class="plan-btn" onclick="openModal(this)">Get Started</button>
+        </div>
+        <div class="plan-fold"></div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- ====================================================
+       ORDER MODAL
+  ===================================================== -->
+  <div id="planModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+  
+      <p class="modal-eyebrow">BLUEBLOODS HQ — YEAR ROUND DESIGNS</p>
+      <h3 id="modalTitle">Get Started</h3>
+      <p class="modal-selected">Selected: <strong id="modalPlanName">—</strong> &nbsp;·&nbsp; <strong id="modalPlanPrice">—</strong></p>
+  
+      <form id="planForm" onsubmit="submitPlanForm(event)">
+  
+        <div class="field">
+          <label for="brandName">Business / Brand Name *</label>
+          <input type="text" id="brandName" name="brandName" placeholder="e.g. Acme Creative Co." required />
+        </div>
+  
+        <div class="field">
+          <label for="brandEmail">Email Address *</label>
+          <input type="email" id="brandEmail" name="brandEmail" placeholder="you@yourbrand.com" required />
+        </div>
+  
+        <div class="field">
+          <label for="industry">Industry *</label>
+          <select id="industry" name="industry" required>
+            <option value="" disabled selected>Select your industry…</option>
+            <option>Fashion & Apparel</option>
+            <option>Food & Beverage</option>
+            <option>Health & Wellness</option>
+            <option>Beauty & Cosmetics</option>
+            <option>Technology & SaaS</option>
+            <option>E-Commerce / Retail</option>
+            <option>Entertainment & Media</option>
+            <option>Sports & Fitness</option>
+            <option>Real Estate</option>
+            <option>Finance & Fintech</option>
+            <option>Education & E-Learning</option>
+            <option>Non-Profit / NGO</option>
+            <option>Travel & Hospitality</option>
+            <option>Automotive</option>
+            <option>Music & Arts</option>
+            <option>Gaming</option>
+            <option>Other</option>
+          </select>
+        </div>
+  
+        <!-- COMPLIANCE CHECKBOX -->
+        <div class="field compliance-block">
+          <label class="checkbox-label compliance-label">
+            <input type="checkbox" id="complianceCheck" name="compliance" required />
+            <span>
+              I confirm that my brand is <strong>not</strong> associated with, involved in, or promoting:
+              slavery or human exploitation; trafficking of children, women, or men; sexual content
+              or adult entertainment; psychoactive substances, narcotics, or the sale of drugs,
+              especially to minors.
+            </span>
+          </label>
+          <div class="compliance-disclaimer">
+            ⚠️ <strong>Disclaimer:</strong> If you check this box falsely and proceed to payment,
+            your order will be <strong>cancelled immediately without a refund</strong>. By checking,
+            you accept full legal and financial responsibility for any misrepresentation.
+          </div>
+        </div>
+  
+        <button type="submit" class="btn modal-submit">Proceed to Payment →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- EXPERTISE -->
+  <section id="expertise">
+    <p class="section-label">WHAT WE DO</p>
+    <h2>OUR EXPERTISE</h2>
+    <p class="section-intro">
+      We craft tailored solutions in <strong>marketing strategy</strong>, <strong>brand identity</strong>,
+      <strong>web & mobile development</strong>, and more — turning every idea into a unique experience.
+    </p>
+    <ul class="expertise-list">
+      <li>Marketing</li>
+      <li>Visual Identity</li>
+      <li>Website Creation</li>
+      <li>Web App Development</li>
+    </ul>
+    <a href="#contact" class="btn btn-outline">
+      <span>See all our services</span>
+      <span>See all our services</span>
+    </a>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <p class="section-label">PORTFOLIO</p>
+    <blockquote class="section-quote">"We'll get straight to the point."</blockquote>
+    <h2>OUR CREATIVE <strong>COLLABORATIONS</strong></h2>
+    <div class="work-grid">
+      <a href="#" class="work-item">
+        <div class="work-img" style="background-image: url('img/project1.jpg')"></div>
+        <h3>2 Kings</h3>
+        <p>Brand identity & Communications Design</p>
+      </a>
+      <a href="#" class="work-item">
+        <div class="work-img" style="background-image: url('img/project2.jpg')"></div>
+        <h3>DNIL</h3>
+        <p>Communications Design</p>
+      </a>
+      <a href="#" class="work-item">
+        <div class="work-img" style="background-image: url('img/project3.jpg')"></div>
+        <h3>Phlnga's Management</h3>
+        <p>Communications Design</p>
+      </a>
+      <a href="#" class="work-item">
+        <div class="work-img" style="background-image: url('img/project4.jpg')"></div>
+        <h3>Greencore Energy</h3>
+        <p>Brand Identity</p>
+      </a>
+      <a href="#" class="work-item">
+        <div class="work-img" style="background-image: url('img/project5.jpg')"></div>
+        <h3>Simlab</h3>
+        <p>Website Development</p>
+      </a>
+      <a href="#" class="work-item">
+        <div class="work-img" style="background-image: url('img/project6.jpg')"></div>
+        <h3>Inule</h3>
+        <p>illustration</p>
+      </a>
+    </div>
+    <a href="#" class="btn btn-outline">
+      <span>View all projects</span>
+      <span>View all projects</span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-img">
+      <img src="img/team.jpg" alt="Our team" />
+    </div>
+    <div class="about-content">
+      <blockquote>"Small but mighty."</blockquote>
+      <p class="section-label">WHO WE ARE</p>
+      <h2>A PASSIONATE STUDIO</h2>
+      <p>
+        For nearly 10 years, we've blended <strong>creativity</strong>, <strong>development</strong>,
+        and <strong>strategy</strong> to deliver innovative communication solutions for our clients.
+        Our mission: build a strong identity and grow your brand's visibility in its market.
+      </p>
+      <a href="#contact" class="btn btn-outline">
+        <span>Learn about us</span>
+        <span>Learn about us</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <p class="section-label">KIND WORDS</p>
+    <blockquote class="section-quote">"Connecting people." — Nokia</blockquote>
+    <h2>TESTIMONIALS</h2>
+    <p class="section-intro">One testimonial is worth a thousand words. Here's what our clients say — 100% authentic.</p>
+    <div class="testimonial-track-wrap">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <p>"We recommend this agency: the team is dynamic and responsive."</p>
+          <strong>Tosin Olayemi</strong>
+          <span>CEO, 2Kings</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"Real expertise, a competent and attentive team — we highly recommend!"</p>
+          <strong>Jennifer</strong>
+          <span>HR Manager, DNIL</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"I strongly recommend them for their creativity and professionalism."</p>
+          <strong>Sarah Lee</strong>
+          <span>CEO, Phlnga's Mgmt.</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"A big thank you for guiding us through our website redesign!"</p>
+          <strong>Dennis Nwatu</strong>
+          <span>CEO, Greencore Energy</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"An exceptional agency! Always reliable and effective."</p>
+          <strong>Emily Clark</strong>
+          <span>Digital Lead, Company E</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"Responsive, attentive, and highly competent. A reliable partner."</p>
+          <strong>Tom Wilson</strong>
+          <span>Marketing & Communications, Company F</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-controls">
+      <button id="prevBtn" aria-label="Previous">&#8592;</button>
+      <button id="nextBtn" aria-label="Next">&#8594;</button>
+    </div>
+    <a href="#contact" class="btn btn-outline">
+      <span>Explore our services</span>
+      <span>Explore our services</span>
+    </a>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>LET'S MEET</h2>
+    <p>If you've scrolled this far, you're interested. Fill in the form below and we'll get back to you!</p>
+    <form id="contactForm">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Name / Surname *" required />
+        <input type="email" name="email" placeholder="Email *" required />
+      </div>
+      <input type="tel" name="phone" placeholder="Phone *" required />
+      <textarea name="message" placeholder="Message" rows="5"></textarea>
+      <label class="checkbox-label">
+        <input type="checkbox" required />
+        I consent to my personal data being used to respond to my request.
+      </label>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© Your Agency — 2025</p>
+    <ul>
+      <li><a href="#">Accessibility</a></li>
+      <li><a href="#">Legal Notice</a></li>
+      <li><a href="#">Cookie Policy</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
