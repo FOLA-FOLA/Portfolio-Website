@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Title — Bluebloods HQ</title>
+  <link rel="stylesheet" href="../portfolio.css" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="logo"><img src="./images/hero icon.png"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#hero">Home</a></li>
+      <li><a href="../index.html#expertise">Services</a></li>
+      <li><a href="../index.html#work">Work</a></li>
+      <li><a href="../index.html#plans">Pricing</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <header class="proj-hero">
+    <a href="../index.html#work" class="back-btn">← Back to Work</a>
+    <div class="proj-hero-inner">
+      <p class="section-label" id="projService">Communications Design</p>
+      <h1 id="projTitle">Project Title Here</h1>
+      <p class="proj-subtitle" id="projSubtitle">We handled the social media designs</p>
+    </div>
+  </header>
+
+  <!-- GALLERY GRID -->
+  <section class="proj-gallery">
+    <p class="section-label">SELECTED WORKS</p>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Images are injected by JS from the PROJECT object below -->
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous">&#8592;</button>
+    <button class="lb-next" id="lbNext" aria-label="Next">&#8594;</button>
+    <div class="lb-img-wrap">
+      <img id="lbImg" src="" alt="" />
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+    <p class="lb-counter" id="lbCounter"></p>
+  </div>
+
+  <!-- CTA -->
+  <section class="proj-cta">
+    <div class="proj-cta-inner">
+      <p class="section-label">LIKE WHAT YOU SEE?</p>
+      <h2>READY TO BUILD <strong>YOUR BRAND?</strong></h2>
+      <p>Choose a Year Round Designs plan and let us handle your content all year long.</p>
+      <a href="../index.html#plans" class="btn">View Our Plans</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© Bluebloods HQ</p>
+    <ul>
+      <li><a href="#">Linkedin</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="../portfolio.js"></script>
+  <script>
+    // ═══════════════════════════════════════════════
+    // EDIT THIS OBJECT FOR EACH PROJECT PAGE
+    // ═══════════════════════════════════════════════
+    const PROJECT = {
+      title:    "Phlnga Creative International Limited",
+      service:  "Communications Design",      // matches card subtitle on homepage
+      subtitle: "Brand Identity Design and communications design for a digital and electronics delearship",
+      images: [
+        { src: "img/lentracte-1.jpg", caption: "social media post" },
+        { src: "img/lentracte-2.jpg", caption: "social media post" },
+        { src: "img/lentracte-3.jpg", caption: "social media post" },
+        { src: "img/lentracte-4.jpg", caption: "social media post" },
+        { src: "img/lentracte-5.jpg", caption: "social media post" },
+        { src: "img/lentracte-6.jpg", caption: "social media post" },
+      ]
+    };
+    // ═══════════════════════════════════════════════
+    initProject(PROJECT);
+  </script>
+</body>
+</html>
