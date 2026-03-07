@@ -88,17 +88,22 @@ img { display: block; max-width: 100%; }
   flex-direction: column;
   height: 3rem;
   align-items: center;
-  justify-content: center;
-  gap: 0;
+  justify-content: flex-start;
   padding: 0 2rem;
 }
 .btn-outline span {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  flex-shrink: 0;
   transition: transform 0.35s ease;
-  line-height: 3rem;
   white-space: nowrap;
 }
-.btn-outline:hover span { transform: translateY(-100%); color: var(--accent); }
+.btn-outline:hover span {
+  transform: translateY(-100%);
+  color: var(--accent);
+}
 
 /* ─── SECTION SHARED ─── */
 section { padding: var(--section-pad); }
@@ -232,35 +237,36 @@ h2 strong { color: var(--accent); }
 /* ─── TESTIMONIALS ─── */
 #testimonials { background: var(--black); overflow: hidden; }
 
-.testimonial-track-wrap { overflow: hidden; margin: 3rem 0 1.5rem; }
+.testimonial-track-wrap {
+  overflow: hidden;
+  margin: 3rem 0 1.5rem;
+  width: 100%;
+}
 .testimonial-track {
   display: flex;
   gap: 1.5rem;
-  transition: transform 0.5s ease;
-  will-change: transform;
+  width: max-content;
+  animation: scrollTrack 30s linear infinite;
 }
+.testimonial-track:hover { animation-play-state: paused; }
+
+@keyframes scrollTrack {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 .testimonial-card {
-  min-width: 340px;
+  width: 340px;
+  flex-shrink: 0;
   background: #111;
   border: 1px solid rgba(255,255,255,0.07);
   padding: 2rem;
-  flex-shrink: 0;
 }
 .testimonial-card p { font-style: italic; line-height: 1.7; opacity: 0.85; margin-bottom: 1.2rem; }
 .testimonial-card strong { display: block; font-size: 0.9rem; }
 .testimonial-card span { font-size: 0.8rem; opacity: 0.5; }
 
-.testimonial-controls { display: flex; gap: 1rem; margin-bottom: 3rem; }
-.testimonial-controls button {
-  background: none;
-  border: 1px solid rgba(255,255,255,0.3);
-  color: var(--white);
-  width: 2.8rem; height: 2.8rem;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
-}
-.testimonial-controls button:hover { border-color: var(--accent); color: var(--accent); }
+.testimonial-controls { display: none; }
 
 /* ─── CONTACT ─── */
 #contact { background: #111; }
