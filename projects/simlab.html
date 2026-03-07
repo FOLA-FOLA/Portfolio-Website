@@ -34,9 +34,14 @@
 
   <!-- GALLERY GRID -->
   <section class="proj-gallery">
-    <p class="section-label">SELECTED WORKS</p>
-    <div class="gallery-grid" id="galleryGrid">
-      <!-- Images are injected by JS from the PROJECT object below -->
+    <p class="section-label">LIVE WEBSITE</p>
+    <div class="proj-iframe-wrap">
+      <iframe
+        src="https://fola-fola.github.io/simlab/"
+        title="Simlab Website"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
     </div>
   </section>
 
@@ -74,24 +79,16 @@
   <script src="../script.js"></script>
   <script src="../portfolio.js"></script>
   <script>
-    // ═══════════════════════════════════════════════
-    // EDIT THIS OBJECT FOR EACH PROJECT PAGE
-    // ═══════════════════════════════════════════════
     const PROJECT = {
-      title:    "Phlnga Creative International Limited",
-      service:  "Communications Design",      // matches card subtitle on homepage
-      subtitle: "Brand Identity Design and communications design for a digital and electronics delearship",
-      images: [
-        { src: "img/lentracte-1.jpg", caption: "social media post" },
-        { src: "img/lentracte-2.jpg", caption: "social media post" },
-        { src: "img/lentracte-3.jpg", caption: "social media post" },
-        { src: "img/lentracte-4.jpg", caption: "social media post" },
-        { src: "img/lentracte-5.jpg", caption: "social media post" },
-        { src: "img/lentracte-6.jpg", caption: "social media post" },
-      ]
+      title:    "Simlab",
+      service:  "Website Design & Development",
+      subtitle: "A fully designed and developed web experience for Simlab",
     };
-    // ═══════════════════════════════════════════════
-    initProject(PROJECT);
+  
+    document.title = PROJECT.title + ' — Bluebloods HQ';
+    document.getElementById('projTitle').textContent    = PROJECT.title;
+    document.getElementById('projService').textContent  = PROJECT.service;
+    document.getElementById('projSubtitle').textContent = PROJECT.subtitle;
   </script>
 </body>
 </html>
