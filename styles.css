@@ -7,7 +7,7 @@
   --white: #f5f5f0;
   --accent: #0072F9;
   --gray: #888;
-  --font-main: 'Space Grotesk','Funnel Display','Helvetica Neue', Arial, sans-serif;
+  --font-main: 'Funnel Display', 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
   --section-pad: 100px 6vw;
 }
 
@@ -283,7 +283,7 @@ h2 strong { color: var(--accent); }
 .testimonial-controls button:hover {
   border-color: var(--accent);
   color: var(--accent);
-}
+}n   
 
 /* ─── CONTACT ─── */
 #contact { background: #111; }
